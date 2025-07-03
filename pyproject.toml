@@ -1,0 +1,23 @@
+[project]
+name = "video_to_ascii"
+version = "0.1.0"
+description = "Video to ASCII + Play ASCII in terminal"
+authors = [
+    {name = "Elio Nakhle", email = "not-gonna@put-my-email.here"},
+]
+dependencies = [
+    "opencv-python",
+    "Pillow",
+    "numpy>=2.2.6",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
