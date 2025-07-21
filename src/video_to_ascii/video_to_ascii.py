@@ -1,4 +1,5 @@
 import cv2
+import argparse
 from PIL import Image
 import os
 
@@ -40,8 +41,6 @@ def video_to_ascii_txt(video_path, output_dir, width=100):
 
 
 if __name__ == "__main__":
-    import argparse
-
     parser = argparse.ArgumentParser(
         description="Convert video frames to ASCII art .txt files."
     )

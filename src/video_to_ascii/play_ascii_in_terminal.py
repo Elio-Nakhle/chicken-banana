@@ -36,7 +36,9 @@ def print_ascii_frames():
                 with open(frame_file, "r") as f:
                     ascii_art = f.read()
                 color = COLORS[color_index]
-                sys.stdout.write("\033[2J\033[H")  # Clear entire terminal and move cursor to top left
+                sys.stdout.write(
+                    "\033[2J\033[H"
+                )  # Clear entire terminal and move cursor to top left
                 sys.stdout.write(f"{color}{ascii_art}{RESET}")
                 sys.stdout.flush()
                 time.sleep(FRAME_DELAY)
